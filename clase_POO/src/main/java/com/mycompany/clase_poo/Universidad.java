@@ -8,21 +8,22 @@ package com.mycompany.clase_poo;
  *
  * @author jhon1
  */
-public class Estudiante {
+public class Universidad {
 
     String nombre;
-    int edad;
+    String ciudad;
 
-    public Estudiante(String nombre, int edad) {
+    public Universidad(String nombre, String ciudad) {
 
         this.nombre = nombre;
-        this.edad = edad;
+        this.ciudad = ciudad;
 
     }
 
     public void mostrar() {
-        System.out.println("nombre: " + nombre);
-        System.out.println("edad: " + edad);
+
+        System.out.println("Nombre Universidad:" + nombre);
+        System.out.println("Nombre Ciudad:" + ciudad);
 
     }
 }
