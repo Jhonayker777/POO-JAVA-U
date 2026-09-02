@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.empresa_app;
 
-/**
- *
- * @author jhon1
- */
 public class Empresa {
 
     public String getNombre() {
@@ -39,6 +31,19 @@ public class Empresa {
     private String ciudad;
 
     public Empresa(String nombre, String nit, String ciudad) {
+
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre no puede ser vacio");
+        }
+
+        if (nit == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nit no puede ser vacio");
+        }
+
+        if (ciudad == null) {
+            throw new IllegalArgumentException("La ciudad no puede estar vacia");
+        }
+
         this.nombre = nombre;
         this.nit = nit;
         this.ciudad = ciudad;

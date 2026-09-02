@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.empresa_app;
 
-/**
- *
- * @author jhon1
- */
 public class Empleado {
-    
+
     private String nombre;
     private String documento;
     private float salario;
@@ -24,12 +16,12 @@ public class Empleado {
         if (documento == null || documento.trim().isEmpty()) {
             throw new IllegalArgumentException("El documento no puede ser vacio");
         }
-        
-        if(salario<=0){
+
+        if (salario <= 0) {
             throw new IllegalArgumentException("Su salario no puede ser negativo");
         }
-        
-        if (departamento == null){
+
+        if (departamento == null) {
             throw new IllegalArgumentException("Departamento no puede ser nulo");
         }
 
@@ -79,6 +71,5 @@ public class Empleado {
         System.out.println("Empresa a la que pertenece: " + departamento.getEmpresa().getNombre());//Nombre de la empresa
 
     }
-
 
 }

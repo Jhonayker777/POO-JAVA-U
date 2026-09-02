@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.empresa_app;
 
-/**
- *
- * @author jhon1
- */
 public class Departamento {
 
     private String nombre;
@@ -15,15 +7,17 @@ public class Departamento {
     private Empresa empresa;
 
     public Departamento(String nombre, String codigo, Empresa empresa) {
-       if(nombre == null || nombre.trim().isEmpty()){
-           throw new IllegalArgumentException("El nombre no puede ser vacio");
-       }
-       
-       if(codigo == null || codigo.trim().isEmpty()){
-           throw new IllegalArgumentException("El codigo no puede ser vacio");
-       }
-        
-        
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre no puede ser vacio");
+        }
+
+        if (codigo == null || codigo.trim().isEmpty()) {
+            throw new IllegalArgumentException("El codigo de la ciudad no puede ser vacio");
+        }
+        if (empresa == null) {
+            throw new IllegalArgumentException("La empresa no puede estar vacia");
+        }
+
         this.codigo = codigo;
         this.nombre = nombre;
         this.empresa = empresa;
