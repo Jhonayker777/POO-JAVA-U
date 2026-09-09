@@ -3,75 +3,124 @@ package com.mycompany.empresa_app;
 public class Empresa_App {
 
     public static void main(String[] args) {
+        // Declaración de variables
         Empresa empresa1 = null;
-        
         Departamento departamento1 = null;
         Departamento departamento2 = null;
-        Departamento departamento3 = null;
-
-       
+        Empleado empleado1 = null;
+        Empleado empleado2 = null;
+        Empleado empleado3 = null;
+        // ==========================================
+        // CREAR EMPRESA
+        // ==========================================
         try {
-            empresa1 = new Empresa("UTS", "000.123.213", "Bucaramanga");
+            empresa1 = new Empresa("ALPINA", "800.154.235-8", "Bogota");
+            System.out.println("-------------------------");
             empresa1.mostrar();
         } catch (IllegalArgumentException e) {
-            System.out.println("Error creando empresa: " + e.getMessage());
-            return; 
+            System.out.println("ERROR EMPRESA: " + e.getMessage());
         }
-        System.out.println("");
-        try {
-            departamento1 = new Departamento("Bienestar del estudiante", "001", empresa1);
-            departamento1.mostrar();
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error creando departamento1: " + e.getMessage());
+        // ==========================================
+        // CREAR DEPARTAMENTO 1
+        // ==========================================
+        if (empresa1 != null) {
+            try {
+                departamento1 = new Departamento("Sistrmas", "A001", empresa1);
+            } catch (IllegalArgumentException e) {
+                System.out.println("ERROR DEPARTAMENTO 1: " + e.getMessage());
+            }
+        } else {
+            System.out.println("No se puede crear el departamento " + "porque la empresa noexiste.");
         }
-        System.out.println("");
-        try {
-            departamento2 = new Departamento("Contratacion", "002", empresa1); 
-            departamento2.mostrar();
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error creando departamento2: " + e.getMessage());
+        // ==========================================
+        // CREAR DEPARTAMENTO 2
+        // ==========================================
+        if (empresa1 != null) {
+            try {
+                departamento2 = new Departamento("Contabilidad", "B001", empresa1);
+            } catch (IllegalArgumentException e) {
+                System.out.println("ERROR DEPARTAMENTO 2: " + e.getMessage());
+            }
         }
-        System.out.println("");
-        try {
-            departamento3 = new Departamento("Nomina", "003", empresa1);
-            departamento3.mostrar();
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error creando departamento3: " + e.getMessage());
+        // ==========================================
+        // AGREGAR DEPARTAMENTOS A LA EMPRESA
+        // ==========================================
+        if (empresa1 != null) {
+            try {
+                if (departamento1 != null) {
+                    empresa1.agregarDepartamento(
+                            departamento1);
+                }
+                if (departamento2 != null) {
+                    empresa1.agregarDepartamento(
+                            departamento2);
+                }
+                System.out.println("-------------------------");
+                empresa1.mostrarDepartamentos();
+            } catch (IllegalArgumentException e) {
+                System.out.println("ERROR AL AGREGAR DEPARTAMENTO: "
+                        + e.getMessage());
+            }
         }
-
-  
+        // ==========================================
+        // CREAR EMPLEADO 1
+        // ==========================================
         if (departamento1 != null) {
             try {
-                Empleado empleado1 = new Empleado("Emmanuel", "1099101776", 1200000, departamento1);
-                empleado1.mostrar();
+                empleado1 = new Empleado("Juan", "1098765432", 2500000, departamento1);
             } catch (IllegalArgumentException e) {
-                System.out.println("Error creando empleado1: " + e.getMessage());
+                System.out.println("ERROR EMPLEADO 1: " + e.getMessage());
             }
-        } else {
-            System.out.println("No se pudo crear empleado1: departamento1 es nulo");
         }
-
+        // ==========================================
+        // CREAR EMPLEADO 2
+        // ==========================================
+        if (departamento1 != null) {
+            try {
+                empleado2 = new Empleado("Pablo", "77777", 1800000, departamento1);
+            } catch (IllegalArgumentException e) {
+                System.out.println("ERROR EMPLEADO 2: " + e.getMessage());
+            }
+        }
+        // ==========================================
+        // CREAR EMPLEADO 3
+        // ==========================================
         if (departamento2 != null) {
             try {
-                Empleado empleado2 = new Empleado("Estebasn", "11254836912", 7000000, departamento2);
-                empleado2.mostrar();
+                empleado3 = new Empleado("Sandra", "66666", 2200000, departamento2);
             } catch (IllegalArgumentException e) {
-                System.out.println("Error creando empleado2: " + e.getMessage());
+                System.out.println("ERROR EMPLEADO 3: " + e.getMessage());
             }
-        } else {
-            System.out.println("No se pudo crear empleado2: departamento2 es nulo");
         }
-        System.out.println("");
-        if (departamento3 != null) {
-            try {
-                Empleado empleado3 = new Empleado("Alucard", "1126905083", 12000000, departamento3);
-                empleado3.mostrar();
-            } catch (IllegalArgumentException e) {
-                System.out.println("Error creando empleado3: " + e.getMessage());
+        // ==========================================
+        // AGREGAR EMPLEADOS
+        // ==========================================
+        try {
+            if (departamento1 != null
+                    && empleado1 != null) {
+                departamento1.agregarEmpleado(empleado1);
             }
-        } else {
-            System.out.println("No se pudo crear empleado3: departamento3 es nulo");
+            if (departamento1 != null
+                    && empleado2 != null) {
+                departamento1.agregarEmpleado(empleado2);
+            }
+            if (departamento2 != null
+                    && empleado3 != null) {
+                departamento2.agregarEmpleado(empleado3);
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println("ERROR AL AGREGAR EMPLEADO: " + e.getMessage());
         }
-
+        // ==========================================
+        // MOSTRAR EMPLEADOS
+        // ==========================================
+        if (departamento1 != null) {
+            System.out.println("-------------------------");
+            departamento1.mostrarEmpleados();
+        }
+        if (departamento2 != null) {
+            System.out.println("-------------------------");
+            departamento2.mostrarEmpleados();
+        }
     }
 }
