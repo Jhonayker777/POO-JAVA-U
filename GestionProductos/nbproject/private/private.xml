@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/model/Marca.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/model/Producto.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/GeneradorId.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/IMarcaRepositorio.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/MarcaRepositorioEnMemoria.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/IProductoRepositorio.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/ProductoRepositorioEnMemoria.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/service/MarcaValidador.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/service/ProductoValidador.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/service/MarcaService.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/service/ProductoService.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/validaciones/Texto.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/validaciones/Entero.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/validaciones/Decimal.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/validaciones/Entrada.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/presenter/MarcaPresenter.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/presenter/ProductoPresenter.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/console/IngresoDatosMarca.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/console/IngresoDatosProducto.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/console/MostrarMarca.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/console/MostrarProductos.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/view/console/OpcionesMenus.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/controller/ControlMarca.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/controller/ControlProducto.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/config/AppConfig.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/controller/Principal.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/Main.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/service/Validador.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/MarcaRepositorioConAuditoria.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/ProductoRepositorioConAuditoria.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/TipoRepositorio.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/repository/RepositorioFactory.java</file>
+            <file>file:/C:/Users/jhon1/OneDrive/Documentos/NetBeansProjects/GestionProductos/src/com/gestion/model/ProductoBuilder.java</file>
+        </group>
+    </open-files>
+</project-private>
